@@ -5,6 +5,26 @@
   font-display: swap;
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
+.container2-item-1 {
+  background-image: url(../images/luis-vidal-BLa_BWbM60g-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom;
+  text-align: center;
+  padding: 5%;
+  border: 3px solid orange;
+}
+.container2-item-1 h2 {
+  font-size: 3.5rem;
+  color: white;
+  text-shadow: 3px 3px black;
+}
+.container2-item-1 p {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 3px black;
+  margin-top: 2%;
+  line-height: normal;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -267,11 +287,35 @@ body {
   justify-content: space-between;
   background-color: orange;
 }
+@media (max-width: 500px) {
+  .header {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column-reverse;
+  }
+}
 .header nav {
   width: 30%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .header nav {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .header nav {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
 }
 .header nav button {
   width: 30%;
@@ -280,6 +324,18 @@ body {
   background-color: white;
   font-size: 1.5rem;
   text-shadow: 1px 1px black;
+}
+@media (max-width: 500px) {
+  .header nav button {
+    width: 40%;
+    margin: 2% 0;
+  }
+}
+@media (max-width: 800px) {
+  .header nav button {
+    width: 40%;
+    margin: 2% 0;
+  }
 }
 .header nav button a {
   text-decoration: none;
@@ -298,6 +354,18 @@ body {
   color: white;
   text-shadow: 2px 2px black;
   padding: 2%;
+}
+@media (max-width: 500px) {
+  .header h1 {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .header h1 {
+    width: 100%;
+    justify-content: center;
+  }
 }
 .team-member-boxes {
   width: 100%;
@@ -320,6 +388,18 @@ body {
   height: 20%;
   border-radius: 50%;
 }
+@media (max-width: 500px) {
+  .team-member-boxes .team-member img {
+    width: 40%;
+    height: 40%;
+  }
+}
+@media (max-width: 800px) {
+  .team-member-boxes .team-member img {
+    width: 40%;
+    height: 40%;
+  }
+}
 .team-member-boxes .team-member h2 {
   color: white;
   font-size: 3rem;
@@ -336,11 +416,22 @@ body {
   border-radius: 10px;
   margin: 1% 0 0 0;
 }
+@media (max-width: 500px) {
+  .team-member-boxes .team-member button {
+    width: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .team-member-boxes .team-member button {
+    width: 50%;
+  }
+}
 .team-member-boxes .team-member button a {
   text-decoration: none;
   font-size: 2rem;
   text-shadow: 1px 1px black;
   color: orange;
+  text-align: center;
 }
 .team-member-boxes .team-member button:hover {
   color: white;
@@ -356,4 +447,14 @@ footer p {
   font-size: 3rem;
   text-align: center;
   padding: 1% 0;
+}
+@media (max-width: 500px) {
+  footer p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 800px) {
+  footer p {
+    font-size: 1.5rem;
+  }
 }
